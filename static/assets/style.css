@@ -1,28 +1,41 @@
 
+.hero-body {
+  /*background-image: url(/static/images/color_with_background@2x.png);*/
+  /*background-size: 400px;*/
+  /*background-repeat: no-repeat;*/
+  background-color: #53e89b;
+  /*background-position: 1000px;*/
+}
+
+.logo {
+  margin: 40px auto 80px auto;
+  width: 400px;
+}
+
 #wrapper {
-  width: 700px;
+  width: 500px;
   margin: 40px auto;
 }
 
 #wheel{
-	width:700px;
-	height:700px;
+	width:500px;
+	height:500px;
 }
 
 #wheel:before{
-	width:692px;
-	height:692px;
+	width:492px;
+	height:492px;
 }
 
 #wheel div.sec{
   left: 70px;
   top: -8px;
-  border-width: 355px 270px 0;
-  transform-origin: 270px 354px;
+  border-width: 255px 170px 0;
+  transform-origin: 170px 254px;
 }
 
 #wheel div.sec .fa {
-    margin-top: -270px;
+    margin-top: -210px;
 }
 
 #shine {
