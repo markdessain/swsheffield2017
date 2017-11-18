@@ -26,10 +26,10 @@ $(document).ready(function(){
 
 		shown_modal = false;
 		$('#donateButton').text('Donate to ...');
-		var y = 0;
+		var y = 6;
 
 		if(x >= 330 && x <= 30) {
-				y = 0;
+				y = 6;
 		} else if(x >= 30 && x <= 90) {
 				y = 1;
 		} else if(x >= 90 && x <= 150) {
