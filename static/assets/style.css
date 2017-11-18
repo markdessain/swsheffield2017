@@ -1,33 +1,33 @@
 
 #wrapper {
-  width: 400px;
+  width: 700px;
   margin: 40px auto;
 }
 
 #wheel{
-	width:400px;
-	height:400px;
+	width:700px;
+	height:700px;
 }
 
 #wheel:before{
-	width:392px;
-	height:392px;
+	width:692px;
+	height:692px;
 }
 
 #wheel div.sec{
   left: 70px;
   top: -8px;
-  border-width: 205px 120px 0;
-  transform-origin: 120px 204px;
+  border-width: 355px 270px 0;
+  transform-origin: 270px 354px;
 }
 
 #wheel div.sec .fa {
-    margin-top: -170px;
+    margin-top: -270px;
 }
 
 #shine {
-    width: 450px;
-    height: 450px;
+    width: 700px;
+    height: 700px;
 }
 
 #spin{
@@ -62,11 +62,11 @@
 }
 
 .charity-shc {
-  width: 70px;
+  width: 120px;
 }
 
 .charity-pact {
-  width: 70px;
+  width: 120px;
 }
 
 h2.subtitle {
@@ -76,4 +76,14 @@ h2.subtitle {
 
 .select-header {
     margin: 0 20px;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.donate-button {
+  width: 200px;
+  margin: 40px auto;
 }

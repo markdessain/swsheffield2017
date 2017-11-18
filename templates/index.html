@@ -1,14 +1,6 @@
-<link href="assets/font-awesome.min.css" rel="stylesheet">
-<link href="assets/bulma.min.css" rel="stylesheet">
-<link href="assets/wheel.css" rel="stylesheet">
-<link href="assets/style.css" rel="stylesheet">
+{% extends "layout.html" %}
+{% block content %}
 
-<script src="assets/jquery-3.2.1.min.js"></script>
-<script src="assets/wheel.js"></script>
-
-<link href='https://fonts.googleapis.com/css?family=Exo+2:900' rel='stylesheet' type='text/css'>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 
 <section class="hero is-medium is-primary is-bold">
@@ -19,7 +11,10 @@
       </h1>
       <h2 class="subtitle">
         A donation of <div class="select select-header">
-          <select>
+          <select name="value" id="value">
+            <option>&pound;1</option>
+            <option>&pound;2</option>
+            <option>&pound;5</option>
             <option>&pound;10</option>
             <option>&pound;20</option>
           </select>
@@ -36,8 +31,8 @@
 
         <div id="wheel">
             <div id="inner-wheel">
-                <div class="sec"><span class="fa charity-icon charity-shc"><img src="images/SHC-Logo.png" /></span></div>
-                <div class="sec"><span class="fa charity-icon charity-pact"><img src="images/pact-logo-retina.png" /></span></div>
+                <div class="sec"><span class="fa charity-icon charity-shc"><img src="/static/images/SHC-Logo.png" /></span></div>
+                <div class="sec"><span class="fa charity-icon charity-pact"><img src="/static/images/pact-logo-retina.png" /></span></div>
                 <div class="sec"><span class="fa charity-icon"><img src="" /></span></div>
                 <div class="sec"><span class="fa charity-icon"><img src="" /></span></div>
                 <div class="sec"><span class="fa charity-icon"><img src="" /></span></div>
@@ -53,3 +48,18 @@
 
   </div>
 </div>
+
+
+<div class="donate-button">
+  <div class="hidden">
+    <form action="/charge" method="post">
+      <input type="text" name="amount" id="amount"/>
+      <input type="text" name="stripeEmail" id="stripeEmail"/>
+      <input type="text" name="stripeToken" id="stripeToken"/>
+    </form>
+  </div>
+
+  <a class="button is-primary is-large" id="donateButton">Donate to ...</a>
+</div>
+
+{% endblock %}
