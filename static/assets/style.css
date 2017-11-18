@@ -12,6 +12,11 @@
   width: 400px;
 }
 
+.disclaimer {
+  width: 400px;
+  margin: 40px auto;
+}
+
 #wrapper {
   width: 500px;
   margin: 40px auto;
