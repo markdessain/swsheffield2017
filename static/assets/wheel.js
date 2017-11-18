@@ -5,6 +5,8 @@ var clicks = 0;
 
 $(document).ready(function(){
 
+	var shown_modal = false;
+
 	/*WHEEL SPIN FUNCTION*/
 	$('#spin').click(function(){
 
@@ -30,12 +32,19 @@ $(document).ready(function(){
 			var interval = setInterval(function () {
 				c++;
 				if (c === n) {
+					if(shown_modal === false) {
+						shown_modal = true;
+
+						// setTimeout(function() {
+							// $(".sign-up").addClass("is-active");
+						// }, 1000);
+					}
 					clearInterval(interval);
 				}
 
 				var aoY = t.offset().top;
-				$("#txt").html(aoY);
-				console.log(aoY);
+				// $("#txt").html(aoY);
+				// console.log(aoY);
 
 				/*23.7 is the minumum offset number that
 				each section can get, in a 30 angle degree.
@@ -57,7 +66,9 @@ $(document).ready(function(){
 
 			noY = t.offset().top;
 
+					console.log('sdfsd');
 		});
+
 	});
 
 

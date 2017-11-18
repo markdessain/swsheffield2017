@@ -6,7 +6,6 @@ var handler = StripeCheckout.configure({
   currency: 'gbp',
   token: function(token) {
 
-    console.log(token);
     var amount = $('select#value').val();
     amount = amount.substr(1);
 
@@ -23,12 +22,10 @@ var handler = StripeCheckout.configure({
 
 $( document ).ready(function() {
 
-  console.log('sdfs');
   $( "#donateButton" ).click(function(e) {
   // $('#donateButton').on('click', function(e) {
     e.preventDefault();
 
-    console.log('asfsdf');
 
     var amount = $('select#value').val();
     amount = amount.substr(1);
@@ -42,4 +39,12 @@ $( document ).ready(function() {
 
   });
 
+  $(".not-complete").click(function(e) {
+      e.preventDefault();
+     $("#coming-soon").addClass("is-active");
+  });
+
+  $("button.close").click(function() {
+     $("#coming-soon").removeClass("is-active");
+  });
 });

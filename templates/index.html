@@ -30,7 +30,18 @@
   </div>
 </section>
 
+
+  <div class="columns wheel-selection">
+    <div class="column">
+      <a class="button is-primary is-large not-complete" href="/report">Pick a cause you wish to support?</a>
+    </div>
+    <div class="column">
+      <a class="button is-primary is-large not-complete" href="/report">or customize your wheel?</a>
+    </div>
+  </div>
+
 <div id="wrapper">
+
 
         <div id="wheel">
             <div id="inner-wheel">
@@ -62,10 +73,63 @@
   </div>
 
   <a class="button is-primary is-large" id="donateButton">Donate to ...</a>
+
+  {% if mode == 'demo' %}
+    <br /><br /><a class="button is-light is-large" href="/charge_demo"> (Skip payment)</a>
+  {% endif %}
+
+
 </div>
 
 <div class="disclaimer">
   (This is a test mode, no real money will be taken.)
 </div>
+
+<div class="modal" id="coming-soon">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Coming Soon</p>
+      <button class="delete close" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      This feature is not yet avalible.
+      <br /><br />
+      If you're interested in the idea we would appreicate your <a href="https://goo.gl/forms/RSq1AxEb4emeHoNA3">feedback</a>, or you can
+      add us on social media to hear when it is released:
+
+      <br /><br />
+      <span class="icon has-text-info is-large">
+        <a href="https://twitter.com/ldonating"><i class="mdi mdi-facebook mdi-36px"></i></a>
+      </span>
+
+      <span class="icon has-text-info is-large">
+        <a href="https://www.facebook.com/Luckydipdonating"><i class="mdi mdi-twitter mdi-36px"></i></a>
+      </span>
+
+    </section>
+    <footer class="modal-card-foot">
+    </footer>
+  </div>
+</div>
+
+<div class="modal sign-up">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Modal title</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body">
+      <iframe src="https://goo.gl/forms/RSq1AxEb4emeHoNA3" style="width: 100%; height: 600px;"></iframe>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success">Save changes</button>
+      <button class="button">Cancel</button>
+    </footer>
+  </div>
+</div>
+
+
 
 {% endblock %}

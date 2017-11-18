@@ -7,6 +7,22 @@
   /*background-position: 1000px;*/
 }
 
+.wheel-selection {
+    width: 800px;
+    margin: 40px auto 200px auto;
+}
+
+.call-to-action {
+  margin: 50px 0 0 0;
+  width: 1000px;
+}
+
+.call-to-action h2 {
+  width: 300px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
 .logo {
   margin: 40px auto 80px auto;
   width: 400px;
