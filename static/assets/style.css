@@ -39,9 +39,19 @@
 }
 
 #shine {
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
 }
+
+
+#wheel div.sec .fa {
+  font-size: 20px;
+  margin-left: -50px;
+  text-align: center;
+  color: #fff;
+}
+
+
 
 #spin{
 	width:108px;
@@ -70,12 +80,77 @@
   height: 154px;
 }
 
-#wheel div.sec .fa {
-  font-size: 20px;
-  margin-left: -50px;
-  text-align: center;
-  color: #fff;
+
+
+@media only screen and (max-width: 500px) {
+      #wrapper {
+        width: 400px;
+        margin: 40px auto;
+      }
+
+      #wheel{
+      	width:400px;
+      	height:400px;
+      }
+
+      #wheel:before{
+      	width:392px;
+      	height:392px;
+      }
+
+      #wheel div.sec{
+        left: 70px;
+        top: -8px;
+        border-width: 205px 120px 0;
+        transform-origin: 120px 204px;
+      }
+
+      #wheel div.sec .fa {
+          margin-top: -170px;
+      }
+
+      #shine {
+          width: 400px;
+          height: 400px;
+      }
+
+
+      #wheel div.sec .fa {
+        font-size: 18px;
+      }
+
+
+      #spin{
+      	width:108px;
+      	height:108px;
+        margin: -54px 0 0 -54px;
+        font-size: 30px;
+      }
+
+      #spin:after{
+        width: 108px;
+        height: 108px;
+        line-height: 108px;
+      }
+
+
+
+      #spin:before{
+        top:-20px;
+        left:36px;
+        border-width: 0 20px 28px 20px;
+      }
+
+      #inner-spin {
+        margin: -52px 0 0 -52px;
+        width: 104px;
+        height: 104px;
+      }
+
+
 }
+
+
 
 .charity-icon {
   width: 50px;
