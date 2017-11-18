@@ -101,7 +101,11 @@
   height: 154px;
 }
 
-
+#wheel a {
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+}
 
 @media only screen and (max-width: 500px) {
 
