@@ -6,6 +6,7 @@ var clicks = 0;
 $(document).ready(function(){
 
 	var shown_modal = false;
+	var result = '...';
 
 	/*WHEEL SPIN FUNCTION*/
 	$('#spin').click(function(){
@@ -20,6 +21,29 @@ $(document).ready(function(){
 		var extraDegree = Math.floor(Math.random() * (360 - 1 + 1)) + 1;
 		totalDegree = newDegree+extraDegree;
 
+		x = ((360 - (totalDegree % 360)));
+
+
+		shown_modal = false;
+		$('#donateButton').text('Donate to ...');
+		var y = 0;
+
+		if(x >= 330 && x <= 30) {
+				y = 0;
+		} else if(x >= 30 && x <= 90) {
+				y = 1;
+		} else if(x >= 90 && x <= 150) {
+				y = 2;
+		} else if(x >= 150 && x <= 210) {
+				y = 3;
+		} else if(x >= 210 && x <= 270) {
+				y = 4;
+		} else if(x >= 270 && x <= 330) {
+				y = 5;
+		}
+
+
+		// console.log(x % 60);
 		/*let's make the spin btn to tilt every
 		time the edge of the section hits
 		the indicator*/
@@ -35,6 +59,14 @@ $(document).ready(function(){
 					if(shown_modal === false) {
 						shown_modal = true;
 
+						result = $( "#inner-wheel .sec:nth-child(" + y + ")").text();
+
+						console.log(y);
+						console.log(result);
+
+
+				    $('input#charity').val(result);
+						$('#donateButton').text('Donate to ' + result);
 						// setTimeout(function() {
 							// $(".sign-up").addClass("is-active");
 						// }, 1000);
