@@ -83,6 +83,14 @@
 
 
 @media only screen and (max-width: 500px) {
+
+
+  .logo {
+    margin: 40px auto 80px auto;
+    width: 350px;
+  }
+
+
       #wrapper {
         width: 400px;
         margin: 40px auto;
