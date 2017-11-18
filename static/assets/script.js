@@ -1,8 +1,8 @@
 var handler = StripeCheckout.configure({
   key: 'pk_test_HHalqsNZCY3AZfOURrIiSPlD',
   locale: 'auto',
-  name: 'Sand Castles United',
-  description: 'One-time donation',
+  name: 'Lucky Dip Donating',
+  description: '',
   currency: 'gbp',
   token: function(token) {
 
