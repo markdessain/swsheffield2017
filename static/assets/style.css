@@ -57,6 +57,13 @@
   height: 154px;
 }
 
+#wheel div.sec .fa {
+  font-size: 20px;
+  margin-left: -50px;
+  text-align: center;
+  color: #fff;
+}
+
 .charity-icon {
   width: 50px;
 }
