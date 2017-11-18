@@ -1,28 +1,28 @@
 
 #wrapper {
-  width: 450px;
+  width: 400px;
   margin: 40px auto;
 }
 
 #wheel{
-	width:450px;
-	height:450px;
+	width:400px;
+	height:400px;
 }
 
 #wheel:before{
-	width:442px;
-	height:442px;
+	width:392px;
+	height:392px;
 }
 
 #wheel div.sec{
   left: 70px;
   top: -8px;
-  border-width: 230px 145px 0;
-  transform-origin: 145px 229px;
+  border-width: 205px 120px 0;
+  transform-origin: 120px 204px;
 }
 
 #wheel div.sec .fa {
-    margin-top: -190px;
+    margin-top: -170px;
 }
 
 #shine {
@@ -31,23 +31,23 @@
 }
 
 #spin{
-	width:168px;
-	height:168px;
-  margin: -84px 0 0 -84px;
+	width:108px;
+	height:108px;
+  margin: -54px 0 0 -54px;
   font-size: 30px;
 }
 
 #spin:after{
-  width: 168px;
-  height: 168px;
-  line-height: 168px;
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
 }
 
 
 
 #spin:before{
-  top:-12px;
-  left:64px;
+  top:-40px;
+  left:36px;
   border-width: 0 20px 28px 20px;
 }
 
