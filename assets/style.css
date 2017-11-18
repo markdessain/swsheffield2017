@@ -1,0 +1,79 @@
+
+#wrapper {
+  width: 450px;
+  margin: 40px auto;
+}
+
+#wheel{
+	width:450px;
+	height:450px;
+}
+
+#wheel:before{
+	width:442px;
+	height:442px;
+}
+
+#wheel div.sec{
+  left: 70px;
+  top: -8px;
+  border-width: 230px 145px 0;
+  transform-origin: 145px 229px;
+}
+
+#wheel div.sec .fa {
+    margin-top: -190px;
+}
+
+#shine {
+    width: 450px;
+    height: 450px;
+}
+
+#spin{
+	width:168px;
+	height:168px;
+  margin: -84px 0 0 -84px;
+  font-size: 30px;
+}
+
+#spin:after{
+  width: 168px;
+  height: 168px;
+  line-height: 168px;
+}
+
+
+
+#spin:before{
+  top:-12px;
+  left:64px;
+  border-width: 0 20px 28px 20px;
+}
+
+#inner-spin {
+  margin: -77px 0 0 -77px;
+  width: 154px;
+  height: 154px;
+}
+
+.charity-icon {
+  width: 50px;
+}
+
+.charity-shc {
+  width: 70px;
+}
+
+.charity-pact {
+  width: 70px;
+}
+
+h2.subtitle {
+  padding: 20px 0;
+  line-height: 50px;
+}
+
+.select-header {
+    margin: 0 20px;
+}
