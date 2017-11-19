@@ -133,6 +133,15 @@ div {
   width: 60px;
 }
 
+#next-content {
+  width: 80%;
+  margin: 100px auto 40px auto;
+}
+
+.header-image {
+  width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
 
     .title center {
@@ -149,7 +158,7 @@ div {
 
 
     .margin-left {
-      margin: 0;
+      margin: 30px;
     }
 
 }
