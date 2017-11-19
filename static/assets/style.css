@@ -24,8 +24,13 @@
 }
 
 .logo {
-  margin: 40px auto 80px auto;
+  margin: -20px auto 100px auto;
   width: 400px;
+}
+
+.hero.is-primary .title {
+  color: rgb(212, 249, 230);
+  margin: 0 0 -50px 0;
 }
 
 .disclaimer {
@@ -88,6 +93,19 @@
 }
 
 
+div {
+  box-sizing: border-box;
+  }
+
+  html,body
+
+{
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+}
 
 #spin:before{
   top:-40px;
@@ -107,13 +125,31 @@
   border-bottom: 1px solid #fff;
 }
 
+.title center img {
+  margin: -20px 20px -20px 20px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .title center {
+      margin: 0px 20px 30px 20px;
+    }
+
+}
+
 @media only screen and (max-width: 500px) {
 
 
   .logo {
     margin: 40px auto 80px auto;
-    width: 350px;
+    width: 100%;
   }
+
+  .title center {
+    margin: 0px 20px 30px 20px;
+  }
+
 
 
       #wrapper {

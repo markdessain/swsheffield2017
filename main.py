@@ -41,7 +41,7 @@ def charge_demo():
 
 @app.route('/next', methods=['GET'])
 def next():
-    return render_template('next.html')
+    return render_template('next.html', amount=10)
 
 
 @app.route('/report', methods=['GET'])
